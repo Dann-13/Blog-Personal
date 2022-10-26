@@ -1,0 +1,99 @@
+/*
+Fuente nav a
+*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Quicksand:wght@500&family=Source+Code+Pro:wght@300;400&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+#contenedor-inicial{
+    background-color: #0D3878;
+}
+
+#menu li>a {
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(26, 26, 26)
+}
+.card img{
+    transition: all 300ms;
+}
+.card img:hover{
+    transform: scale(1.10);
+}
+
+
+/*Carrusel*/
+/*Limitamos el tamaño de las imagenes*/
+.carousel-inner {
+    max-height: 39rem;
+}
+
+/*pie*/
+#bg-final{
+    position: relative;
+    margin-top: 200px;
+    top: -190px;
+}
+#seccion-final{
+    min-height: 800px;
+    background-color: #0D3878;
+    bottom: 0;
+}
+/*Formulario*/
+#img-form{
+    height: 300px;
+}
+#contenedor-formulario{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #f7f7f7;
+    border-radius: 15px;
+}
+#titulo-formulario{
+    color: #0D3878;
+}
+
+/*redes*/
+footer{
+    background-color:#0D3878 ;
+    min-height: 100px;
+}
+footer p {
+    color: #f7f7f7;
+    text-align: center;
+    color: #f7f7f7;
+
+}
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+}
+
+/*Media para pantalla pequeña*/
+@media (max-width:768px) {
+    #Bienvenida, #mensaje{
+        width: 90% !important;
+        /*importat permite que se aplique este estilo, y no el de bootstrap*/
+    }
+    .paginas-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    #bg-final{
+        position: relative;
+        top: -85px;
+    }
+    #contenedor-formulario{
+        position: absolute;
+        margin-top: 200px;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: #f7f7f7;
+    }
+}
+
